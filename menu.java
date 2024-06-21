@@ -45,6 +45,7 @@ public class menu {
 
             if (op == 5) {
             	System.out.println(cores.TEXT_PURPLE_BOLD + "\nObrigada por visitar Refúgio Literário, espero que volte sempre!");
+                sobre();
 				read.close();
 				System.exit(0);
             }
@@ -83,5 +84,13 @@ public class menu {
 
 
 	}
+
+    private static void sobre() {
+        System.out.println("\n¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+        System.out.println("\nProjeto Desenvolvido por: Daniele Santos Valonga");
+        System.out.println("\nGeneration Brasil - generation@generation.org");
+        System.out.println("\nhttps://github.com/DanieleValonga");
+        System.out.println("\n¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
+    }
 
 }
