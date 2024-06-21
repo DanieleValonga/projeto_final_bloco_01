@@ -2,48 +2,68 @@ package ecommerce.model;
 
 public class infoLivros {
 
-    private String nomeLivro;
+    private static String nomeLivro;
     private Double preco;
+    private int quantidade;
+    private int quantidadeEstoque;
     private String genero;
     private long id;
 
-    public infoLivros(String nomeLivro, Double preco, String genero, long id) {
+    public infoLivros(String nomeLivro, Double preco, int quantidade, int quantidadeEstoque, String genero, long id) {
         super();
-        this.nomeLivro = nomeLivro;
+        infoLivros.nomeLivro = nomeLivro;
         this.preco = preco;
         this.genero = genero;
         this.id = id;
+        this.quantidade = quantidade;
+        this.quantidadeEstoque = quantidadeEstoque;
     }
 
-    protected String getNomeLivro() {
+    public static String getNomeLivro() {
         return nomeLivro;
     }
 
-    protected void setNomeLivro(String nomeLivro) {
-        this.nomeLivro = nomeLivro;
+    public void setNomeLivro(String nomeLivro) {
+        infoLivros.nomeLivro = nomeLivro;
     }
 
-    protected Double getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    protected void setPreco(Double preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 
-    protected String getGenero() {
+    public int getQuantidadeEstoque() {
+        return quantidadeEstoque;
+    }
+
+    public void setQuantidadeEstoque(int quantidadeEstoque) {
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public String getGenero() {
         return genero;
     }
 
-    protected void setGenero(String genero) {
+    public void setGenero(String genero) {
         this.genero = genero;
     }
 
-    protected long getId() {
+    public long getId() {
         return id;
     }
 
-    protected void setId(long id) {
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 }

@@ -1,6 +1,6 @@
 package ecommerce.model;
 
-public class clientes extends cadastro{
+public class clientes extends Cadastro{
 
     public clientes(String nome, String telefone, String email, String usuario, String senha, String nomeCartao, long digitosCartao) {
         super(nome, telefone, email, usuario, senha, nomeCartao, digitosCartao);
